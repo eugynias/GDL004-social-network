@@ -1,5 +1,5 @@
 
-import signUpWithEmailAndPassword from '../view-controler/firebase.js'
+import {signUpWithEmailAndPassword} from '../view-controler/firebase.js'
 import viewentrar from  '../views/crearcuenta.js'
 
 export default (evt)=> {

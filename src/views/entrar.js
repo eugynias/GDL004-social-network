@@ -1,7 +1,9 @@
+import crearC from '../view-controler/view-controller.js'
+
 export default ()=> {
-    
+
     //crear el div padre para paguina de login//
-   const divElementos=document.createElement("div");
+  /* const divElementos=document.createElement("div");
    divElementos.setAttribute("id","_container");
 
    // creo div con elemento p..... y lo agredo a div padre//
@@ -14,7 +16,7 @@ export default ()=> {
    const p_texto=p.appendChild(t);
    divElementos.appendChild(div1);
    div1.appendChild(p_texto);
-  
+
 
  //crear el div con elemento input email y adregarlo a div padre//
  const div2_input=document.createElement("div");
@@ -95,46 +97,35 @@ divElementos.appendChild(parrafo);
 
 
  return divElementos;
-}
-//const t_3 =document.createTextNode("No tienes cuenta aún?");*/
-//const p_pregunta=p_3.appendChild(t_3);
-        // <a> dentro del parrafo//
-//const anchor=document.createElement("a");
-//anchor.setAttribute("href","#/crearcuenta");
-   // no logre que el anchor se visualizara en la vista//
-//anchor.innerHTML= "crear cuenta";
-//p_3.appendChild(anchor);
-//divElementos.appendChild(div7_parrafo);
-//div7_parrafo.appendChild(p_pregunta);
-
-/*`<div class="login-container"> 
+}*/
+`<div class="login-container">
     <div class="item-login">
     <form id="form">
     <p>¡Inicia sesion en tu cuenta de EDUlarity</p>
-    </div>     
+    </div>
     <div class="item-login">
     <input type="text" class="form-login--user" placeholder="Email">
-    </div>        
+    </div>
     <div class="item-login">
     <input type="password" class="form-login--user" placeholder="Contraseña">
-    </div>        
+    </div>
     <div class="item-login">
-    <input type="submit" value="Iniciar sesion" class="form-login--submit">
+    <input type="submit" id="btn-ingresa" value="Iniciar sesion" class="form-login--submit">
     </div>
     <p class="item-login">ingresa con...</p>
-  <div id="item-login">     
-  <a id="google"><img src="images/googleCircle.png" class="pequeña"></a>      
+  <div id="item-login">
+  <a id="google"><img src="images/googleCircle.png" class="pequeña"></a>
   <a id="facebook"><img src="images/iconFacebook.png" class="pequeña"></a>
-  </div>    
+  </div>
   <p class="item-login">No tienes cuenta aún? <a href="#/crearcuenta">CREAR CUENTA</a></p>
   </div>
   </form>`
-  
+
     const divElem = document.createElement('div')
     divElem.innerHTML = viewentrar;
 
-    return divElem;*/
+    const btn = divElem.querySelector('#btn-ingresa');
+    btn.addEventListener('click',crearC);
 
-
-
- 
+    return divElem;
+  }
