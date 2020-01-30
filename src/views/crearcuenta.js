@@ -1,8 +1,10 @@
-import crearC from '../view-controler/view-controller.js'
+import signUpWithEmailAndPass from '../view-controler/view-controller.js'
 
-export default ()=> {
+export  default ()=> {
 
   const viewentrar=
+
+
   `<div class="container-all">
    <div class="ctn-form">
 
@@ -25,33 +27,13 @@ export default ()=> {
                 <button id="btn-crear-cuenta" class="boton-iniciar">Crear Cuenta</button>
             </div>
         </form>
+
     </main>
       </div>
 
     </div>`
 
- /*`<div class="login-container">
-      <div class="item-login">
-      <form id="form">
-      <p>¡Inicia sesion en tu cuenta de EDUlarity</p>
-     </div>
-      <div class="item-login">
-      <input type="text" id="email" class="form-login--user" placeholder="Email">
-      </div>
-      <div class="item-login">
-      <input type="password" class="form-login--user" placeholder="Contraseña">
-      </div>
-      <div class="item-login">
-      <input type="submit" id="entrar" value="Iniciar sesion" class="form-login--submit">
-      </div>
-      <p class="item-login">ingresa con...</p>
-    <div id="item-login">
-    <a id="google"><img src="images/googleCircle.png" class="pequeña"></a>
-    <a id="facebook"><img src="images/iconFacebook.png" class="pequeña"></a>
-    </div>
-    <p class="item-login">No tienes cuenta aún? <a href="#/crearcuenta">CREAR CUENTA</a></p>
-    </div>
-    </form>`*/
+ 
 
       const divElem = document.createElement('div')
       divElem.innerHTML = viewentrar;
